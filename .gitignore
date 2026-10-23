@@ -13,3 +13,5 @@ AD_Events/
 STEALTH_SUSY/MC_Events*
 Models_Extrapolation_ML_ver2/samples
 Eval_CWoLa_SR_ATLAS_ver2/scored_datasets/MC_SR_GEN_scored.parquet
+
+Final_Plots
