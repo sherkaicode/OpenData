@@ -117,8 +117,9 @@ class Classifier():
             train_dataset = torch.utils.data.TensorDataset(x_train, y_train)
             val_dataset = torch.utils.data.TensorDataset(x_val, y_val)
         
-        train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=60, pin_memory=True)
-        val_dataloader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=60, pin_memory=True)
+        train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=False)
+        val_dataloader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=0, pin_memory=False)
+        
         
         return train_dataloader, val_dataloader
     
